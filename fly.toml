@@ -1,6 +1,6 @@
-# fly.toml file generated for directusfly on 2022-09-14T05:00:58Z
+# fly.toml file generated for ditavrbova-cz on 2023-02-11T11:18:04+01:00
 
-app = "directusfly"
+app = "ditavrbova-cz"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -8,11 +8,11 @@ processes = []
 [env]
   DB_CLIENT = "sqlite3"
   DB_FILENAME = "/data/database/data.db"
-  STORAGE_LOCATIONS = "local"
+  FLY_PRIMARY_REGION = "ams"
+  PORT = 6055
   STORAGE_LOCAL_DRIVER = "local"
   STORAGE_LOCAL_ROOT = "/data/uploads"
-  FLY_PRIMARY_REGION = "sea"
-  PORT = 6055
+  STORAGE_LOCATIONS = "local"
 
 [experimental]
   allowed_public_ports = []
